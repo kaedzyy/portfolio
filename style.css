@@ -98,9 +98,8 @@ a { color: var(--accent); }
 h1 {
   font-size: clamp(2.8rem, 8vw, 5rem);
   font-weight: 800;
-  line-height: 1.15;
+  line-height: 1.1;
   margin-bottom: 12px;
-  background: linear-gradient(transparent 70%, var(--highlight) 70%);
 }
 
 .tagline { font-size: 1.4rem; font-style: italic; margin-bottom: 16px; }
