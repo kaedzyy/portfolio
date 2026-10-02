@@ -57,7 +57,7 @@ a { color: var(--accent); }
 
 .brand {
   font-weight: 800;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: var(--text);
   text-decoration: none;
 }
