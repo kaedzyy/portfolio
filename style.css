@@ -79,7 +79,7 @@ a { color: var(--accent); }
   cursor: pointer;
 }
 .icon-btn:hover { background: var(--surface); border-color: var(--accent); }
-.menu-btn { display: none; } /* shown only on mobile */
+.menu-btn { display: none; }
 
 /* ---------- Hero / About (Flexbox) ---------- */
 .hero {
@@ -98,11 +98,15 @@ a { color: var(--accent); }
 h1 {
   font-size: clamp(2.8rem, 8vw, 5rem);
   font-weight: 800;
-  line-height: 1.05;
+  line-height: 1.15;
   margin-bottom: 12px;
-  /* highlighter-style underline behind the name */
   background: linear-gradient(transparent 70%, var(--highlight) 70%);
-  display: inline-block;
+}
+
+.name {
+  background: linear-gradient(transparent 72%, var(--highlight) 72%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .tagline { font-size: 1.4rem; font-style: italic; margin-bottom: 16px; }
@@ -175,7 +179,6 @@ h2 { font-size: 2rem; font-weight: 700; margin-bottom: 28px; }
 @media (max-width: 768px) {
   .menu-btn { display: inline-block; }
 
-  /* Navigation becomes a dropdown panel, hidden until the menu button is tapped */
   .nav {
     display: none;
     position: absolute;
